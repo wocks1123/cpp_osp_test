@@ -8,12 +8,12 @@ matrix:
       sudo: required
       compiler: gcc
       script:
-        - sh Scripts/travis_build.sh
+        - sh BuildScripts/travis_build.sh
     - name: Test OS X 10.14 + Xcode 10.2 + clang
       os: osx
       osx_image: xcode10.2
       compiler: clang
       script:
-        - sh Scripts/travis_build.sh
+        - sh BuildScripts/travis_build.sh
   before_install:
     - eval "${MATRIX_EVAL}"
