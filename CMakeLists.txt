@@ -6,6 +6,7 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake")
 
 # Declare project
 project(Project1)
+project(Project2)
 
 # Set output directories
 set(DEFAULT_CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
@@ -35,6 +36,7 @@ set(CMAKE_MACOSX_RPATH ON)
 # Project modules
 add_subdirectory(Libraries/doctest)
 add_subdirectory(Sources/Project1)
+add_subdirectory(Sources/Project2)
 add_subdirectory(Tests/UnitTests)
 
 # Code coverage - Debug only
