@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.8.2 FATAL_ERROR)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake")
 
 # Declare project
-project(cpp_osp_test)
+project(Project1)
 
 # Set output directories
 set(DEFAULT_CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
@@ -33,9 +33,9 @@ endif()
 set(CMAKE_MACOSX_RPATH ON)
 
 # Project modules
-# add_subdirectory(Libraries/doctest)
+add_subdirectory(Libraries/doctest)
 add_subdirectory(Sources/Project1)
-# add_subdirectory(Tests/UnitTests)
+add_subdirectory(Tests/UnitTests)
 
 # Code coverage - Debug only
 # NOTE: Code coverage results with an optimized (non-Debug) build may be misleading
